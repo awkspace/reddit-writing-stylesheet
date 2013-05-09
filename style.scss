@@ -1,0 +1,153 @@
+// Display a message to anyone looking at the CSS directly in the hopes of saving them a headache.
+/*
+
+            Stylesheet by /u/awkisopen. Icons by /u/douchebag_karren.
+                         Partially inspired by /r/boxed.
+
+                               /
+                              /         o _/_o
+                         _   /, , , _   , /  , _ _   _ ,
+                        / (_/(_(_/_/ (_(_(__(_/ / /_(_)_
+                                                     /|
+                                                    (/
+                                  v0.1-alpha
+
+This stylesheet was written in SASS and then compiled to CSS. To view the
+(hopefully) more readable and (somewhat) documented code, visit:
+
+            https://github.com/awkisopen/reddit-writing-stylesheet
+
+If you spot a problem or something that could be improved, please open a new
+issue or submit a pull request.
+
+*/
+
+// Import helper functions
+@import "lib/mixins.scss";
+
+// Size of the header image, used for calculating the announcement bar
+$header-height: 59px;
+
+// I am terrible at variable names and willing to take suggestions. Here's what I've come up with out of necessity:
+
+// ENTIRE PAGE
+// background                       The background of the entire page. Sits behinds the "boxes" of content.
+// text                             Default text color.
+// muted-text                       Text that stands out against the background but is nevertheless muted
+//                                  (i.e. the ranking numbers next to each post)
+
+// BOXES
+// box-shadow                       A box's dropshadow.
+// box-border                       A box's border.
+// box-background                   Background color of a box.
+// box-background-highlight         A highlighted element on a box. (Possibly merge with post-link-alt-background)
+
+// LINKS (SUBMITTED)
+// post-link                        A submitted link.
+// post-link-visited                A submitted link after having visited.
+// post-link-alt-background         Background of odd-numbered posts.
+
+// LINKS (OTHER)
+// link                             All links except post links.
+// link-visited                     All links except post links, post-visit.
+
+// HEADER
+// header-background                Background color of the header.
+// header-foreground                A color contrasting with the header's background color.
+
+// CONTENT (this may be expanded to more specific elements in later revisions)
+// content-foreground
+// content-background
+// content-border
+
+// CONTRAST (this may be expanded to more specific elements in later revisions)
+// contrast-background              The background of an element meant to contrast with the rest of the page.
+// contrast-foreground              The foreground of an element meant to contrast with the rest of the page.
+// contrast-background-selected     The background of a selected element inside a contrasting element.
+// contrast-foreground-selected     The foreground of a selected element inside a contrasting element.
+
+// Color scheme - day
+$night: false;
+
+$black:        #000000;
+
+$white:        #ffffff;
+$offwhite:     #fafafa; // Reddit default for self.posts
+
+$lighterbrown: #e4d6b1;
+$lightbrown:   #d3c5a5;
+$brown:        #5f5744;
+$midbrown:     mix($brown, $lightbrown);
+
+$darkred:      darkred;
+
+$lightgray:    #eeeeee;
+$gray:         #5a5b54;
+
+$background:                    $lightbrown;
+$text:                          $black;
+
+$box-shadow:                    $midbrown;
+$box-border:                    $lightgray;
+$box-background:                $white;
+$box-background-highlight:      $lightgray;
+$muted-text:                    $gray;
+
+$post-link:                     $darkred;
+$post-link-visited:             $gray;
+$post-link-alt-background:      $offwhite;
+$post-separator:                $lightgray;
+
+$link:                          $darkred;
+$link-visited:                  $gray; //TODO: Is this used?
+
+$header-background:             $lightbrown;
+$header-foreground:             $brown;
+
+$content-foreground:            $black;
+$content-background:            $offwhite;
+$content-border:                $gray;
+
+$contrast-background:           $brown;
+$contrast-foreground:           $lightbrown;
+$contrast-highlight-background: $lightbrown;
+$contrast-highlight-foreground: $brown;
+
+body {
+
+  @import "elements/all.scss";
+
+}
+
+// Color scheme - night
+$night: true;
+
+$lightbrown: #d3c5a5;
+$brown:      #332c26;
+$red:        #d31508;
+$gray:       #5a5b54;
+$white:      #ffffff;
+
+$background:                    $white;
+
+$post-link:                     $red;
+$post-link-visited:             $gray;
+
+$link:                          $red;
+$link-visited:                  $gray;
+
+$muted-text:                    $gray;
+
+$header-background:             $lightbrown;
+$header-foreground:             $brown;
+
+$contrast-background:           $brown;
+$contrast-foreground:           $lightbrown;
+$contrast-highlight-background: $lightbrown;
+$contrast-highlight-foreground: $brown;
+
+body.res-nightmode {
+
+  @import "elements/all.scss";
+
+}

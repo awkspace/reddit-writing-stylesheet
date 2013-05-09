@@ -1,0 +1,26 @@
+// Highlight when hovering over the gear menu
+div#RESMainGearOverlay { background: $lightbrown; }
+
+// Gear (preferences) menu
+div#RESPrefsDropdown {
+  border: 1px solid $contrast-background;
+
+  ul#RESDropdownOptions li {
+
+    // Strangely, the menu options are not consistent here - while most are a list-item, at least one ("my dashboard")
+    // has a link element nested inside. This code ensures that the following styles are equally applied to all options
+    // regardless of whether there is a nested link or not.
+    &, & a {
+      border: none;
+      background: $contrast-background;
+      color: $contrast-foreground;
+    }
+
+    &:hover, & a:hover {
+      background: $contrast-highlight-background;
+      color: $contrast-highlight-foreground;
+    }
+
+  }
+
+}
