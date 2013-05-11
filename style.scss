@@ -69,7 +69,7 @@ $header-height: 40px;
 // Color scheme - day
 $night: false;
 
-$black:        #000000;
+$black:        #333333;
 
 $white:        #ffffff;
 $offwhite:     #fafafa; // Reddit default for self.posts
@@ -81,7 +81,8 @@ $midbrown:     mix($brown, $lightbrown);
 
 $darkred:      darkred;
 
-$lightgray:    #eeeeee;
+$lightgray:    #dddddd;
+$lightergray:  lighten($lightgray, 5%);
 $gray:         #5a5b54;
 
 $background:                    $lightbrown;
@@ -90,7 +91,7 @@ $text:                          $black;
 $box-shadow:                    $midbrown;
 $box-border:                    $lightgray;
 $box-background:                $white;
-$box-background-highlight:      $lightgray;
+$box-background-highlight:      $lightergray;
 $muted-text:                    $gray;
 
 $post-link:                     $darkred;
