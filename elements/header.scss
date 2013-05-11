@@ -8,12 +8,12 @@ div#header {
   }
 
   div#header-bottom-left {
-    background-image: url(%%headerbkg%%);
+    background-image: url(%%header-background%%);
     background-position: left center;
     background-color: $header-background;
 
     @if $night {
-      background-image: url(%%headerbkg-night%%) !important;
+      background-image: url(%%header-background-night%%) !important;
       background-position: left center !important;
       background-color: $header-background !important;
     }
