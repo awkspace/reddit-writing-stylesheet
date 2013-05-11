@@ -1,10 +1,9 @@
-@include flair-img(critique, critiqueonwhite);
-@include flair-img(meta, MetaonWhite);
-@include flair-img(submissions, CallforSubsonWhite);
-@include flair-img(resource, Resource-for-white);
-@include flair-img(other, OtherOnWhite);
-@include flair-img(advice, AdviceonWhite);
-@include flair-img(discussion, NWDiscussion);
-@include flair-img(advice, AdviceonWhite);
+@include flair-img(critique, flair-critique);
+@include flair-img(meta, flair-meta);
+@include flair-img(submissions, flair-submissions);
+@include flair-img(resource, flair-resource);
+@include flair-img(other, flair-other);
+@include flair-img(discussion, flair-discussion);
+@include flair-img(advice, flair-advice);
 
 //TODO: Night mode flairs
