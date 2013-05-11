@@ -104,7 +104,7 @@ $header-foreground:             $brown;
 
 $content-foreground:            $black;
 $content-background:            $offwhite;
-$content-border:                $gray;
+$content-border:                $lightgray;
 
 $contrast-background:           $brown;
 $contrast-foreground:           $lightbrown;
@@ -144,7 +144,7 @@ $contrast-foreground:           $lightbrown;
 $contrast-highlight-background: $lightbrown;
 $contrast-highlight-foreground: $brown;
 
-body.res-nightmode {
+body .res-nightmode {
 
   @import "elements/all.scss";
 
