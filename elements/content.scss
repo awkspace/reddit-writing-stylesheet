@@ -45,6 +45,16 @@ div.content {
       div.entry {
         margin-left: 110px;
 
+        // Link flair
+        span.linkflairlabel {
+          width: 80px;
+          text-align: center;
+          height: 14px;
+          vertical-align:bottom;
+          @include no-rounded-corners;
+        }
+
+        // Adds an element (in this case, the flair icons) before the link flair
         span.linkflairlabel:before {
           content: '';
           display: block;
