@@ -40,7 +40,6 @@ $header-height: 40px;
 // box-shadow                       A box's dropshadow.
 // box-border                       A box's border.
 // box-background                   Background color of a box.
-// box-background-highlight         A highlighted element on a box. (Possibly merge with post-link-alt-background)
 
 // LINKS (SUBMITTED)
 // post-link                        A submitted link.
@@ -82,7 +81,6 @@ $midbrown:     mix($brown, $lightbrown);
 $darkred:      darkred;
 
 $lightgray:    #dddddd;
-$lightergray:  lighten($lightgray, 5%);
 $gray:         #5a5b54;
 
 $background:                    $lightbrown;
@@ -91,7 +89,6 @@ $text:                          $black;
 $box-shadow:                    $midbrown;
 $box-border:                    $lightgray;
 $box-background:                $white;
-$box-background-highlight:      $lightergray;
 $muted-text:                    $gray;
 
 $post-link:                     $darkred;
