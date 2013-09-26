@@ -26,7 +26,7 @@ issue or submit a pull request.
 @import "lib/mixins.scss";
 
 // Size of the header image, used for calculating the announcement bar
-$header-height: 40px;
+$header-height: 75px - 3px;
 
 // I am terrible at variable names and willing to take suggestions. Here's what I've come up with out of necessity:
 

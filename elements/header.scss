@@ -12,6 +12,11 @@ div#header {
     background-position: left center;
     background-color: $header-background;
 
+    #header-img-a #header-img {
+      margin-bottom: -3px; // Make alien's podium flush with top of subreddit
+      margin-left: 10px;
+    }
+
     @if $night {
       background-image: url(%%header-background-night%%) !important;
       background-position: left center !important;

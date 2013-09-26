@@ -42,6 +42,5 @@ The second way is through [modmail](http://www.reddit.com/message/compose?to=%2F
 ##Credits
 Parts of this theme were inspired by the [Boxed theme by /u/creesch](http://www.reddit.com/r/boxed). If you want a clean, easy-to-deploy Reddit stylesheet, check out [his own project](https://github.com/creesch/Boxed-css-theme-for-reddit) on github.
 
-Flair icon design by [/u/douchebag_karren](http://www.reddit.com/u/douchebag_karren).
+Flair icons and header image by [/u/douchebag_karren](http://www.reddit.com/u/douchebag_karren).
 
-Once we decide on a new header image, credit for that will go here :)
