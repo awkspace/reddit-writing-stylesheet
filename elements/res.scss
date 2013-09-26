@@ -24,3 +24,15 @@ div#RESPrefsDropdown {
   }
 
 }
+
+// Applies to all active page elements (used for keyboard navigation)
+div.RES-keyNav-activeElement {
+  background: $selected !important;
+  outline: none !important;
+
+}
+
+// Override RES's uh... questionable colorization of individually selected comments
+.RES-keyNav-activeElement,
+.commentarea .RES-keyNav-activeElement .md,
+.commentarea .RES-keyNav-activeElement.entry .noncollapsed { background-color:transparent !important; }

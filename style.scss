@@ -69,6 +69,7 @@ $night: false;
 
 $background:                    #d3c5a5;
 $text:                          #333333;
+$selected:                      lighten($background, 15%);
 
 $box-shadow:                    mix(#5f5744, #d3c5a5);
 $box-border:                    #bbbbbb;

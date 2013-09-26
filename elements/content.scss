@@ -33,12 +33,6 @@ div.content {
       // Remove top border from first post
       &:first-child { border-top: none; }
 
-      // RES: Disable selected post highlight
-      div.RES-keyNav-activeElement {
-        background: none !important;
-        outline: none !important;
-      }
-
       // Ranking number to the left of entry
       span.rank { color: $muted-text; }
 
