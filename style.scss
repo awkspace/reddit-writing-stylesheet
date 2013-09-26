@@ -48,7 +48,6 @@ $header-height: 75px - 3px;
 
 // LINKS (OTHER)
 // link                             All links except post links.
-// link-visited                     All links except post links, post-visit.
 
 // HEADER
 // header-background                Background color of the header.
@@ -68,48 +67,34 @@ $header-height: 75px - 3px;
 // Color scheme - day
 $night: false;
 
-$black:        #333333;
+$background:                    #d3c5a5;
+$text:                          #333333;
 
-$white:        #ffffff;
-$offwhite:     #fafafa; // Reddit default for self.posts
+$box-shadow:                    mix(#5f5744, #d3c5a5);
+$box-border:                    #bbbbbb;
+$box-background:                #ffffff;
+$muted-text:                    #5a5b54;
 
-$lighterbrown: #e4d6b1;
-$lightbrown:   #d3c5a5;
-$brown:        #5f5744;
-$midbrown:     mix($brown, $lightbrown);
+$post-link:                     #333333;
+$post-link-visited:             darken(#ccab99, 20%);
+$post-link-alt-background:      #fafafa; // Reddit default for self.posts
 
-$darkred:      darkred;
+$link:                          darkred;
 
-$lightgray:    #dddddd;
-$gray:         #5a5b54;
+$flair-background:              #5f5744;
+$flair-foreground:              #d3c5a5;
 
-$background:                    $lightbrown;
-$text:                          $black;
+$header-background:             #d3c5a5;
+$header-foreground:             #5f5744;
 
-$box-shadow:                    $midbrown;
-$box-border:                    $lightgray;
-$box-background:                $white;
-$muted-text:                    $gray;
+$content-foreground:            #333333;
+$content-background:            #fafafa;
+$content-border:                #bbbbbb;
 
-$post-link:                     $darkred;
-$post-link-visited:             $gray;
-$post-link-alt-background:      $offwhite;
-$post-separator:                $lightgray;
-
-$link:                          $darkred;
-$link-visited:                  $gray; //TODO: Is this used?
-
-$header-background:             $lightbrown;
-$header-foreground:             $brown;
-
-$content-foreground:            $black;
-$content-background:            $offwhite;
-$content-border:                $lightgray;
-
-$contrast-background:           $brown;
-$contrast-foreground:           $lightbrown;
-$contrast-highlight-background: $lightbrown;
-$contrast-highlight-foreground: $brown;
+$contrast-background:           #5f5744;
+$contrast-foreground:           #d3c5a5;
+$contrast-highlight-background: $contrast-foreground;
+$contrast-highlight-foreground: $contrast-background;
 
 body {
 
@@ -120,31 +105,36 @@ body {
 // Color scheme - night
 $night: true;
 
-$lightbrown: #d3c5a5;
-$brown:      #332c26;
-$red:        #d31508;
-$gray:       #5a5b54;
-$white:      #ffffff;
+$background:                    #2c2922;
+$text:                          #ffffff;
 
-$background:                    $white;
+$box-shadow:                    mix(#2c2922, #000000);
+$box-border:                    #333333;
+$box-background:                #222222;
+$muted-text:                    #5a5b54;
 
-$post-link:                     $red;
-$post-link-visited:             $gray;
+$post-link:                     #333333;
+$post-link-visited:             darken(#ccab99, 20%);
+$post-link-alt-background:      lighten(#222222, 5%);
 
-$link:                          $red;
-$link-visited:                  $gray;
+$link:                          red;
 
-$muted-text:                    $gray;
+$flair-background:              #5f5744;
+$flair-foreground:              #d3c5a5;
 
-$header-background:             $lightbrown;
-$header-foreground:             $brown;
+$header-background:             #d3c5a5;
+$header-foreground:             #5f5744;
 
-$contrast-background:           $brown;
-$contrast-foreground:           $lightbrown;
-$contrast-highlight-background: $lightbrown;
-$contrast-highlight-foreground: $brown;
+$content-foreground:            #fafafa;
+$content-background:            #333333;
+$content-border:                #444444;
 
-body .res-nightmode {
+$contrast-background:           #5f5744;
+$contrast-foreground:           #d3c5a5;
+$contrast-highlight-background: $contrast-foreground;
+$contrast-highlight-foreground: $contrast-background;
+
+body.res-nightmode {
 
   @import "elements/all.scss";
 

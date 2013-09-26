@@ -27,7 +27,7 @@ div.content {
       overflow: hidden;
       margin: 0px;
       padding: 5px 5px 10px 5px;
-      border-top: 1px solid $post-separator;
+      border-top: 1px solid darken($post-link-alt-background, 10%);
       min-height: 50px;
 
       // Remove top border from first post
@@ -47,6 +47,9 @@ div.content {
 
         // Link flair
         span.linkflairlabel {
+          background-color: $flair-background;
+          color: $flair-foreground;
+          border: none;
           width: 80px;
           text-align: center;
           height: 14px;
